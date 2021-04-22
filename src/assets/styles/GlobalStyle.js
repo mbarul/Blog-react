@@ -11,6 +11,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background: ${({ theme }) => theme.colors.lightGrey};
     margin: 0;
     padding: 0;
 }
