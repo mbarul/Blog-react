@@ -3,6 +3,8 @@ import { GlobalStyle } from '../assets/styles/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../assets/styles/theme';
 import { StyledRoot } from './Root.styles';
+import Home from '../containers/Home/Home';
+import Header from '../components/molecules/Header/Header';
 
 const Root = () => {
   return (
@@ -10,7 +12,10 @@ const Root = () => {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <StyledRoot>
-          <div className="App">Marek</div>
+          <div className="App">
+            <Header />
+            <Home />
+          </div>
         </StyledRoot>
       </ThemeProvider>
     </>

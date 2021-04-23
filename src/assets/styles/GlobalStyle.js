@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background: ${({ theme }) => theme.colors.lightGrey};
+    font-family: sans-serif;
+    background: ${({ theme }) => theme.colors.lightPurple};
     margin: 0;
     padding: 0;
 }
