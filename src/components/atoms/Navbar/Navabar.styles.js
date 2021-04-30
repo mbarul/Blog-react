@@ -23,8 +23,25 @@ export const StyledNavbar = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.colors.darkGrey};
   }
-  .search {
+  .search form {
     display: flex;
     margin: 0 10px;
+  }
+  .search form button {
+    border: none;
+    background-color: ${({ theme }) => theme.colors.lightGrey};
+    font-size: ${({ theme }) => theme.fontSize.l};
+    cursor: pointer;
+  }
+  .searchInput {
+    border: 0;
+    width: 0px;
+    transition: width 0.2s ease-in;
+  }
+  .searchInput.active {
+    width: 150px;
+  }
+  .searchInput:focus {
+    outline: none;
   }
 `;

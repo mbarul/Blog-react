@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { StyledNavbar } from './Navabar.styles';
 /**
  * @author
@@ -6,26 +7,45 @@ import { StyledNavbar } from './Navabar.styles';
  **/
 
 const Navbar = (props) => {
+  const [search, setSearch] = useState(false);
+  const submitSearch = (e) => {
+    e.preventDefault();
+    alert('Test');
+  };
+
+  const openSearch = () => {
+    setSearch(true);
+  };
+
+  const searchClass = search ? 'searchInput active' : 'searchInput';
   return (
     <StyledNavbar>
       <div className="navbar">
         <ul className="navbarMenu">
           <li>
-            <a href="#">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a href="#">About us</a>
+            <NavLink to="/aboutUs">About us</NavLink>
           </li>
           <li>
-            <a href="#">Posts</a>
+            <NavLink to="/post">Posts</NavLink>
           </li>
           <li>
-            <a href="#">Contant us</a>
+            <NavLink to="/contact">Contant us</NavLink>
           </li>
         </ul>
         <div className="search">
-          <input type="text" placeholder="Search..." />
-          <img src={require('../../../assets/icons/search.png')} alt="search" />
+          <form onSubmit={submitSearch}>
+            <input
+              type="text"
+              className={searchClass}
+              placeholder="Search..."
+            />
+            <button onClick={openSearch} className="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
         </div>
       </div>
     </StyledNavbar>
