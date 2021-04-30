@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledHero } from './Hero.styles';
 import Card from '../Ul/Card/Card';
 import Logo from '../../atoms/Logo/Logo';
-import Navbar from '../../atoms/Navbar/Navbar';
+import Navbar from '../Navbar/Navbar';
 /**
  * @author Marek
  * @function Hero

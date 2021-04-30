@@ -16,15 +16,13 @@ const Root = () => {
         <ThemeProvider theme={theme}>
           <GlobalStyle />
           <StyledRoot>
-            <div className="App">
-              <Header />
-              <Hero />
-              <Switch>
-                <Route path="/" component={Home} exact />
-                <Route path="/contact" component={Contact} exact />
-                <Route path="/post" component={Post} exact />
-              </Switch>
-            </div>
+            <Header />
+            <Hero />
+            <Switch>
+              <Route path="/" component={Home} exact />
+              <Route path="/contact" component={Contact} exact />
+              <Route path="/post" component={Post} exact />
+            </Switch>
           </StyledRoot>
         </ThemeProvider>
       </Router>

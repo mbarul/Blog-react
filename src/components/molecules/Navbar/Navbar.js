@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { StyledNavbar } from './Navabar.styles';
+import { StyledNavbar } from './Navbar.styles';
 /**
  * @author
  * @function Navbar
