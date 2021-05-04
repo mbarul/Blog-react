@@ -7,11 +7,7 @@ import { StyledCard } from './Card.styles';
  **/
 
 const Card = (props) => {
-  return (
-    <StyledCard>
-      <div className="card">{props.children}</div>
-    </StyledCard>
-  );
+  return <StyledCard {...props}>{props.children}</StyledCard>;
 };
 
 export default Card;
