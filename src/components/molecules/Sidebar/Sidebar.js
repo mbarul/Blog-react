@@ -22,7 +22,7 @@ const Sidebar = (props) => {
           <div className="cardHeader">
             <span>Social Network</span>
             <div className="imageContainer">
-              <img src="" alt="1.jpg" />
+              <img src="/1.jpg" alt="" />
             </div>
           </div>
         </Card>
