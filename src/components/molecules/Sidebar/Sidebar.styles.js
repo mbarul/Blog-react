@@ -19,5 +19,6 @@ export const StyledSidebar = styled.div`
   .imageContainer img {
     max-width: 100%;
     max-height: 100%;
+    margin: 20px 0;
   }
 `;

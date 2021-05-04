@@ -1,20 +1,19 @@
 import styled from 'styled-components';
 
 export const StyledNavbar = styled.div`
-  .navbar {
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  .navbar ul {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+
+  ul {
     margin: 0;
     padding: 0;
   }
-  .navbar ul li {
+  ul li {
     list-style: none;
     display: inline-block;
   }
-  .navbar ul li a {
+  ul li a {
     padding: 0 10px;
     text-decoration: none;
     display: block;

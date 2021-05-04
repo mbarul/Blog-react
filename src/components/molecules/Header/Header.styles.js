@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledHeader = styled.div`
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 10px 0;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
 
-  .headerMenu a {
+  a {
     display: inline-block;
     margin: 0px 10px;
     text-decoration: none;
@@ -16,7 +14,7 @@ export const StyledHeader = styled.div`
     font-size: ${({ theme }) => theme.fontSize.m};
     letter-spacing: 1.2px;
   }
-  .headerMenu a:hover {
+  a:hover {
     color: ${({ theme }) => theme.colors.grey};
   }
 `;

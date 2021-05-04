@@ -20,33 +20,27 @@ const Navbar = (props) => {
   const searchClass = search ? 'searchInput active' : 'searchInput';
   return (
     <StyledNavbar>
-      <div className="navbar">
-        <ul className="navbarMenu">
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/aboutUs">About us</NavLink>
-          </li>
-          <li>
-            <NavLink to="/post">Posts</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contant us</NavLink>
-          </li>
-        </ul>
-        <div className="search">
-          <form onSubmit={submitSearch}>
-            <input
-              type="text"
-              className={searchClass}
-              placeholder="Search..."
-            />
-            <button onClick={openSearch} className="searchButton">
-              <i class="fa fa-search"></i>
-            </button>
-          </form>
-        </div>
+      <ul className="navbarMenu">
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/aboutUs">About us</NavLink>
+        </li>
+        <li>
+          <NavLink to="/post">Posts</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact">Contant us</NavLink>
+        </li>
+      </ul>
+      <div className="search">
+        <form onSubmit={submitSearch}>
+          <input type="text" className={searchClass} placeholder="Search..." />
+          <button onClick={openSearch} className="searchButton">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
       </div>
     </StyledNavbar>
   );
