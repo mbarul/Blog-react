@@ -12,4 +12,12 @@ export const StyledSidebar = styled.div`
     letter-spacing: 2px;
     color: ${({ theme }) => theme.colors.darkGrey};
   }
+  .imageContainer {
+    width: 100%;
+    padding: 20px;
+  }
+  .imageContainer img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 `;

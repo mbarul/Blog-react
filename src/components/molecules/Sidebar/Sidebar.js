@@ -13,16 +13,16 @@ const Sidebar = (props) => {
         <Card style={{ marginBottom: '20px' }}>
           <div className="cardHeader">
             <span>About us</span>
-            <div>
-              <img src="" alt="" />
-            </div>
+          </div>
+          <div>
+            <img src="" alt="" />
           </div>
         </Card>
         <Card style={{ marginBottom: '20px' }}>
           <div className="cardHeader">
             <span>Social Network</span>
-            <div>
-              <img src="" alt="" />
+            <div className="imageContainer">
+              <img src="" alt="1.jpg" />
             </div>
           </div>
         </Card>
