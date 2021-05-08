@@ -9,6 +9,7 @@ import Card from '../Ul/Card/Card';
 const Sidebar = (props) => {
   return (
     <StyledSidebar>
+<<<<<<< HEAD
       <Card style={{ marginBottom: '20px', padding: '10px' }}>
         <div className="cardHeader">
           <span>About us</span>
@@ -60,6 +61,9 @@ const Sidebar = (props) => {
         </div>
         <div className="cardBody"></div>
       </Card>
+=======
+      <Card style={{ width: '100%' }}>Sidebar</Card>
+>>>>>>> Marek_2
     </StyledSidebar>
   );
 };
