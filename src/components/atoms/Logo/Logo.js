@@ -8,9 +8,7 @@ import { StyledLogo } from './Logo.styles';
 const Logo = (props) => {
   return (
     <StyledLogo>
-      <div className="logo">
-        <a href="#">Marek</a>
-      </div>
+      <a href="#">Marek</a>
     </StyledLogo>
   );
 };
