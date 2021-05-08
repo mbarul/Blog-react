@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledCard = styled.div`
-  width: 100%;
+export const StyledSidebar = styled.div`
+  width: 28%;
   background: ${({ theme }) => theme.colors.lightGrey};
 `;
