@@ -21,7 +21,7 @@ const Root = () => {
             <Switch>
               <Route path="/" component={Home} exact />
               <Route path="/contact" component={Contact} exact />
-              <Route path="/post" component={Post} exact />
+              <Route path="/post/:postId" component={Post} exact />
             </Switch>
           </StyledRoot>
         </ThemeProvider>
