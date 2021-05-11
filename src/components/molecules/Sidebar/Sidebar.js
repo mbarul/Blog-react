@@ -1,12 +1,21 @@
 import React from 'react';
 import { StyledSidebar } from './Sidebar.styles';
 import Card from '../Ul/Card/Card';
+import blogPost from '../../../data/blog.json';
 /**
  * @author
  * @function Sidebar
  **/
 
 const Sidebar = (props) => {
+  const [post, setPost] = useState({});
+
+  useEffect(() => {
+    const postId = props.match.params.postId;
+    const postText = blogPost.data.find((post) => post.id == postId);
+    setPost(postText);
+    console.log(post);
+  });
   return (
     <StyledSidebar>
       <Card style={{ marginBottom: '20px', padding: '10px' }}>

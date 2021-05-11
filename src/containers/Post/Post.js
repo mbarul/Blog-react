@@ -8,7 +8,6 @@ import Sidebar from '../../components/molecules/Sidebar/Sidebar';
  **/
 
 const Post = (props) => {
-  console.log(props);
   return (
     <StyledPost>
       <BlogPost {...props} />
