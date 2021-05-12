@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyledSidebar } from './Sidebar.styles';
 import Card from '../Ul/Card/Card';
 import blogPost from '../../../data/blog.json';
+import { NavLink } from 'react-router-dom';
 /**
  * @author
  * @function Sidebar
  **/
 
 const Sidebar = (props) => {
-  const [post, setPost] = useState({});
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const postId = props.match.params.postId;
-    const postText = blogPost.data.find((post) => post.id == postId);
-    setPost(postText);
-    console.log(post);
+    const posts = blogPost.data;
+    setPosts(posts);
+    console.log(posts);
   });
   return (
     <StyledSidebar>
@@ -55,14 +55,16 @@ const Sidebar = (props) => {
           <span>Recent Posts</span>
         </div>
         <div className="recentPosts">
-          <div className="recentPost">
-            <h3>Post title</h3>
-            <span>July 21 </span>
-          </div>
-          <div className="recentPost">
-            <h3>Post title</h3>
-            <span>July 21 </span>
-          </div>
+          {posts.map((post) => {
+            return (
+              <NavLink to={`/post/${post.id}`}>
+                <div className="recentPost">
+                  <h3>{post.blogTitle}</h3>
+                  <span>{post.postedOn} </span>
+                </div>
+              </NavLink>
+            );
+          })}
         </div>
         <div className="imageContainer">
           <img src="" alt="" />

@@ -24,18 +24,18 @@ const BlogPost = (props) => {
       <div className="blogPostContainer">
         <Card style={{ width: '100%' }}>
           <div className="blogHeader">
-            <span className="blogCategory">Featured</span>
+            <span className="blogCategory">{post.blogCategory}</span>
             <h1>{post.blogTitle}</h1>
             <span className="postedBy">
-              posted onJuly 21, 2016 bySora Blogging Tips
+              posted {post.postedOn} by {post.author}
             </span>
           </div>
           <div className="postImageContainer">
-            <img src="/images/porto.jpg" alt="" />
+            <img src={`/images/${post.blogImage}`} alt="" />
           </div>
           <div className="post Content">
-            <h3>Post Title</h3>
-            <p>Lorem</p>
+            <h3>{post.blogTitle}</h3>
+            <p>{post.blogText}</p>
           </div>
         </Card>
       </div>
