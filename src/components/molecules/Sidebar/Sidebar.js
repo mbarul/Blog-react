@@ -15,9 +15,10 @@ const Sidebar = (props) => {
     const posts = blogPost.data;
     setPosts(posts);
     console.log(posts);
-  });
+  }, [posts]);
   return (
     <StyledSidebar>
+      <div style={props.style}></div>
       <Card style={{ marginBottom: '20px', padding: '10px' }}>
         <div className="cardHeader">
           <span>About us</span>
@@ -57,7 +58,7 @@ const Sidebar = (props) => {
         <div className="recentPosts">
           {posts.map((post) => {
             return (
-              <NavLink to={`/post/${post.id}`}>
+              <NavLink key={post.id} to={`/post/${post.id}`}>
                 <div className="recentPost">
                   <h3>{post.blogTitle}</h3>
                   <span>{post.postedOn} </span>

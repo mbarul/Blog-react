@@ -17,7 +17,7 @@ const BlogPost = (props) => {
     const postText = blogPost.data.find((post) => post.id == postId);
     setPost(postText);
     console.log(post);
-  });
+  }, [props.match.params.postId, post]);
 
   return (
     <StyledBlogPost>
