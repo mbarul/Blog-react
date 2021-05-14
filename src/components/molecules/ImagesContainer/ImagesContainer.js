@@ -9,8 +9,11 @@ import ImageContainer from '../../atoms/ImageContainer/ImageContainer';
 const ImagesContainer = (props) => {
   return (
     <StyledImagesContainer>
-      <section></section>
       <section>
+        <ImageContainer />
+      </section>
+      <section>
+        <ImageContainer />
         <ImageContainer />
         <ImageContainer />
       </section>

@@ -17,8 +17,7 @@ const Sidebar = (props) => {
     console.log(posts);
   }, [posts]);
   return (
-    <StyledSidebar>
-      <div style={props.style}></div>
+    <StyledSidebar style={props.style}>
       <Card style={{ marginBottom: '20px', padding: '10px' }}>
         <div className="cardHeader">
           <span>About us</span>

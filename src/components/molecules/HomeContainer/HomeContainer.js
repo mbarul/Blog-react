@@ -10,8 +10,8 @@ import RecentPosts from '../RecentPosts/RecentPosts';
 const HomeContainer = (props) => {
   return (
     <StyledHomeContainer>
-      <RecentPosts style={{ width: '100%' }} />
-      <Sidebar style={{ width: '40%', color: 'red' }} />
+      <RecentPosts style={{ width: '70%' }} />
+      <Sidebar style={{ width: '30%' }} />
     </StyledHomeContainer>
   );
 };
