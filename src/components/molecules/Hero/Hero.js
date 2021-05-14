@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledHero } from './Hero.styles';
-import Card from '../Ul/Card/Card';
+import Card from '../Card/Card';
 import Logo from '../../atoms/Logo/Logo';
 import Navbar from '../Navbar/Navbar';
 /**

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { StyledSidebar } from './Sidebar.styles';
-import Card from '../Ul/Card/Card';
+import Card from '../Card/Card';
 import blogPost from '../../../data/blog.json';
 import { NavLink } from 'react-router-dom';
 /**

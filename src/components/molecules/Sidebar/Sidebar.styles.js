@@ -11,7 +11,7 @@ export const StyledSidebar = styled.div`
     padding: 10px 0;
     letter-spacing: 1px;
     font-weight: 700;
-    color: ${({ theme }) => theme.colors.darkGrey};
+    color: ${({ theme }) => theme.colors.black};
   }
   .imageContainer {
     width: 100%;
@@ -25,7 +25,7 @@ export const StyledSidebar = styled.div`
   }
   .personalBio {
     font-size: ${({ theme }) => theme.fontSize.s};
-    color: ${({ theme }) => theme.colors.grey};
+    color: ${({ theme }) => theme.colors.darkGrey};
     font-weight: 300;
   }
   .recentPosts {
@@ -45,6 +45,6 @@ export const StyledSidebar = styled.div`
   .recentPost span {
     font-size: ${({ theme }) => theme.fontSize.s};
     font-weight: 600;
-    color: ${({ theme }) => theme.colors.grey};
+    color: ${({ theme }) => theme.colors.darkPurple};
   }
 `;

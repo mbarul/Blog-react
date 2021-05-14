@@ -1,0 +1,19 @@
+import React from 'react';
+import { StyledHomeContainer } from './HomeContainer.styles';
+import Sidebar from '../Sidebar/Sidebar';
+import RecentPosts from '../RecentPosts/RecentPosts';
+/**
+ * @author
+ * @function HomeContainer
+ **/
+
+const HomeContainer = (props) => {
+  return (
+    <StyledHomeContainer>
+      <RecentPosts style={{ width: '100%' }} />
+      <Sidebar style={{ width: '40%', color: 'red' }} />
+    </StyledHomeContainer>
+  );
+};
+
+export default HomeContainer;

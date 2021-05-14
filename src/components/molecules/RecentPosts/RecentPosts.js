@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../../molecules/Ul/Card/Card';
+import Card from '../Card/Card';
 
 const RecentPosts = (props) => {
   return (

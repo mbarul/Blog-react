@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledPost } from './Post.styles';
-import BlogPost from '../../components/molecules/BlogPost/BlogPost';
+import BlogPost from '../../components/organisms/BlogPost/BlogPost';
 import Sidebar from '../../components/molecules/Sidebar/Sidebar';
 /**
  * @author

@@ -1,13 +1,13 @@
 import React from 'react';
-import { GlobalStyle } from '../assets/styles/GlobalStyle';
+import { GlobalStyle } from '../../assets/styles/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../assets/styles/theme';
+import { theme } from '../../assets/styles/theme';
 import { StyledRoot } from './Root.styles';
-import Home from '../containers/Home/Home';
-import Header from '../components/molecules/Header/Header';
-import Hero from '../components/molecules/Hero/Hero';
-import Contact from '../containers/Contact/Contact';
-import Post from '../containers/Post/Post';
+import Header from '../../components/molecules/Header/Header';
+import Hero from '../../components/molecules/Hero/Hero';
+import Contact from '../Contact/Contact';
+import Post from '../Post/Post';
+import Home from '../Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 const Root = () => {
   return (
