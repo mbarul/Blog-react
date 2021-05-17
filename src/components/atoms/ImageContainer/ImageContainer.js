@@ -1,16 +1,12 @@
-import React from 'react';
-import { StyledImageContainer } from './ImageContainer.styles';
-/**
- * @author
- * @function ImageContainer
- **/
+import styled from 'styled-components';
 
-const ImageContainer = (props) => {
-  return (
-    <StyledImageContainer>
-      <img src="/images/porto.jpg" alt="" />
-    </StyledImageContainer>
-  );
-};
-
-export default ImageContainer;
+export const ImageContainer = styled.div`
+  width: 100%;
+  padding: 30px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1%;
+    margin: 20px 0px;
+  }
+`;

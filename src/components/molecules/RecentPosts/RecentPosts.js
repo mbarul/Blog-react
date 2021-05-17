@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card';
-import ImageContainer from '../../atoms/ImageContainer/ImageContainer';
+import { ImageContainer } from '../../atoms/ImageContainer/ImageContainer';
 import { Title } from '../../atoms/Title/Title';
 import { PostedBy } from '../../atoms/PostedBy/PostedBy';
 import { BlogCategory } from 'components/atoms/BlogCategory/BlogCategory';

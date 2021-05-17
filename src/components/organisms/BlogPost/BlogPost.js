@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { StyledBlogPost } from './BlogPost.styles';
 import Card from '../../molecules/Card/Card';
-import blogPost from '../../../data/blog.json';
 import BlogHeader from '../../molecules/BlogHeader/BlogHeader';
 import PostContent from '../../molecules/PostContent/PostContent';
 
@@ -12,21 +11,10 @@ import PostContent from '../../molecules/PostContent/PostContent';
  **/
 
 const BlogPost = (props) => {
-  const [post, setPost] = useState({});
-
-  useEffect(() => {
-    const postId = props.match.params.postId;
-    const postText = blogPost.data.find((post) => post.id == postId);
-    setPost(postText);
-    console.log(post);
-  });
-
   return (
     <StyledBlogPost>
-      <Card style={{ width: '100%' }}>
-        <BlogHeader />
-        <PostContent />
-      </Card>
+      <BlogHeader {...props} />
+      <PostContent {...props} />
     </StyledBlogPost>
   );
 };
