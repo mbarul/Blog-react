@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyledGallaryPost } from './GallaryPost.styles';
 import ImagesContainer from '../../molecules/ImagesContainer/ImagesContainer';
+import Card from '../Card/Card';
 /**
  * @author
  * @function GallaryPost
@@ -9,7 +10,9 @@ import ImagesContainer from '../../molecules/ImagesContainer/ImagesContainer';
 const GallaryPost = (props) => {
   return (
     <StyledGallaryPost>
-      <ImagesContainer />
+      <Card>
+        <ImagesContainer />
+      </Card>
     </StyledGallaryPost>
   );
 };

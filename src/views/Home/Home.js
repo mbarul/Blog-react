@@ -7,9 +7,7 @@ import HomeContainer from '../../components/molecules/HomeContainer/HomeContaine
 const Home = (props) => {
   return (
     <StyledHome>
-      <Card>
-        <GallaryPost />
-      </Card>
+      <GallaryPost />
       <HomeContainer />
     </StyledHome>
   );

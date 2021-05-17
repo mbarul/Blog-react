@@ -10,12 +10,20 @@ const ImagesContainer = (props) => {
   return (
     <StyledImagesContainer>
       <section>
-        <ImageContainer />
+        <ImageContainer>
+          <img src="/images/porto.jpg" alt="" />
+        </ImageContainer>
       </section>
       <section>
-        <ImageContainer />
-        <ImageContainer />
-        <ImageContainer />
+        <ImageContainer>
+          <img src="/images/porto.jpg" alt="" />
+        </ImageContainer>
+        <ImageContainer>
+          <img src="/images/porto.jpg" alt="" />
+        </ImageContainer>
+        <ImageContainer>
+          <img src="/images/porto.jpg" alt="" />
+        </ImageContainer>
       </section>
     </StyledImagesContainer>
   );
