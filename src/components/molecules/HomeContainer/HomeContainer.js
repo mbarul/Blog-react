@@ -11,7 +11,7 @@ const HomeContainer = (props) => {
   return (
     <StyledHomeContainer>
       <RecentPosts style={{ width: '70%' }} />
-      <Sidebar style={{ width: '30%' }} />
+      <Sidebar style={{ width: '29%' }} />
     </StyledHomeContainer>
   );
 };

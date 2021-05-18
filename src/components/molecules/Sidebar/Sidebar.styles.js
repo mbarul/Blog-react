@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledSidebar = styled.div`
-  width: 28%;
+  width: 29%;
 
   .cardHeader {
     background: ${({ theme }) => theme.colors.lightGrey};
@@ -15,13 +15,13 @@ export const StyledSidebar = styled.div`
   }
   .imageContainer {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
   }
   .imageContainer img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 1%;
-    margin: 20px 0px;
+    margin: 10px 0px;
   }
   .personalBio {
     font-size: ${({ theme }) => theme.fontSize.s};
@@ -33,7 +33,7 @@ export const StyledSidebar = styled.div`
   }
   .recentPost {
     border-bottom: 3px solid ${({ theme }) => theme.colors.lightPurple};
-    margin: 0px 20px 20px 20px;
+    margin: 0px 10px 10px 10px;
   }
   .recentPost h3 {
     margin: 0px;

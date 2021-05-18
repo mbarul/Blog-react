@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledHomePage } from './HomePage.styles';
-import GallaryPost from '../../molecules/GallaryPost/GallaryPost';
+import GalleryPost from '../../molecules/GalleryPost/GalleryPost';
 import HomeContainer from '../../molecules/HomeContainer/HomeContainer';
 /**
  * @author
@@ -10,7 +10,7 @@ import HomeContainer from '../../molecules/HomeContainer/HomeContainer';
 const HomePage = (props) => {
   return (
     <StyledHomePage>
-      <GallaryPost />
+      <GalleryPost />
       <HomeContainer />
     </StyledHomePage>
   );

@@ -18,7 +18,7 @@ const Sidebar = (props) => {
   }, [posts]);
   return (
     <StyledSidebar style={props.style}>
-      <Card style={{ marginBottom: '20px', padding: '10px' }}>
+      <Card style={{ marginBottom: '10px', padding: '10px' }}>
         <div className="cardHeader">
           <span>About us</span>
         </div>
@@ -33,8 +33,8 @@ const Sidebar = (props) => {
       </Card>
       <Card
         style={{
-          marginBottom: '20px',
-          padding: '20px 0',
+          marginBottom: '10px',
+          padding: '10px 0',
         }}
       >
         <div className="cardHeader">
@@ -47,8 +47,8 @@ const Sidebar = (props) => {
       </Card>
       <Card
         style={{
-          marginBottom: '20px',
-          padding: '20px 0',
+          marginBottom: '10px',
+          padding: '10px 0',
         }}
       >
         <div className="cardHeader">

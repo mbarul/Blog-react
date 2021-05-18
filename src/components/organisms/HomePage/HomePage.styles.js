@@ -1,3 +1,5 @@
 import styled from 'styled-components';
 
-export const StyledHomePage = styled.div``;
+export const StyledHomePage = styled.div`
+  margin-top: 10px;
+`;
