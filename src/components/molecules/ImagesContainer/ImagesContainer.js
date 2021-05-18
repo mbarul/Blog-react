@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyledImagesContainer } from './ImagesContainer.styles';
 import { ImageContainer } from '../../atoms/ImageContainer/ImageContainer';
+
 /**
  * @author
  * @function ImagesContainer

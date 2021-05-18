@@ -19,7 +19,7 @@ const RecentPosts = (props) => {
         <Title>Hahahah</Title>
         <PostedBy>date</PostedBy>
         <Text>Lorem..................</Text>
-        <Button>Read more</Button>
+        <Button>Read more ></Button>
       </Card>
     </StyledRecentPosts>
   );

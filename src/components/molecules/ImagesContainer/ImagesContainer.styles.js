@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-
+import Card from '../Card/Card';
 export const StyledImagesContainer = styled.section`
   display: flex;
   flex-direction: row;
   object-fit: cover;
   margin: 5px;
-
   section {
     margin: 5px;
   }
