@@ -10,8 +10,9 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Newsreader', serif;
     background: ${({ theme }) => theme.colors.lightPurple};
+    font-variant: small-caps;
     margin: 0;
     padding: 0;
 }

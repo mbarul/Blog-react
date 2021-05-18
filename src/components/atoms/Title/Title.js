@@ -8,6 +8,6 @@ export const Title = styled.h1`
   letter-spacing: 5px;
   text-transform: capitalize;
   font-size: ${({ theme }) => theme.fontSize.xl};
-  margin: 0;
-  font-weight: 400;
+  padding: 0 10px;
+  font-weight: bold;
 `;
