@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledHeader } from './Header.styles';
+import SocialMedia from '../../atoms/SocialMedia/SocialMedia';
 /**
  * @author Marek
  * @function Header
@@ -8,13 +9,8 @@ import { StyledHeader } from './Header.styles';
 const Header = (props) => {
   return (
     <StyledHeader>
-      <nav className="headerMenu">
-        <a href="#">Home</a>
-        <a href="#">About us</a>
-        <a href="#">Contact</a>
-        <a href="#">Shop</a>
-      </nav>
-      <div>Social Media Links</div>
+      <nav className="headerMenu"></nav>
+      <SocialMedia />
     </StyledHeader>
   );
 };

@@ -3,6 +3,7 @@ import { StyledSidebar } from './Sidebar.styles';
 import Card from '../Card/Card';
 import blogPost from '../../../data/blog.json';
 import { NavLink } from 'react-router-dom';
+import SocialMedia from '../../atoms/SocialMedia/SocialMedia';
 /**
  * @author
  * @function Sidebar
@@ -31,20 +32,7 @@ const Sidebar = (props) => {
           </p>
         </div>
       </Card>
-      <Card
-        style={{
-          marginBottom: '10px',
-          padding: '10px 0',
-        }}
-      >
-        <div className="cardHeader">
-          <span>Social Network</span>
-        </div>
-        <div className="imageContainer">
-          <img src="" alt="" />
-        </div>
-        <div className="cardBody"></div>
-      </Card>
+
       <Card
         style={{
           marginBottom: '10px',

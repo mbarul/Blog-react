@@ -20,8 +20,8 @@ const PostContent = (props) => {
   });
   return (
     <StyledPostContent>
-      <ImageContainer>
-        <img src={`/images/${post.blogImage}`} alt="" />
+      <ImageContainer style={{ textAlign: 'center' }}>
+        <img src={`/images/${post.blogImage}`} alt="" style={{}} />
       </ImageContainer>
       <Title>{post.blogTitle}</Title>
       <Text>{post.blogText}</Text>
