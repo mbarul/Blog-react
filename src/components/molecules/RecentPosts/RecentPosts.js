@@ -11,6 +11,8 @@ import blogPost from '../../../data/blog.json';
 
 const RecentPosts = (props) => {
   const [readMore, setReadMore] = useState(false);
+
+  //
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -18,23 +20,18 @@ const RecentPosts = (props) => {
     setPosts(posts);
     console.log(posts);
   }, [posts]);
-  const extraContent = (
-    <div>
-      <Text>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-        consectetur nequeab porro quasi culpa nulla rerum quis minus
-        voluptatibus sed hic ad quo sint, libero commodi officia aliquam! Maxime
-      </Text>
-    </div>
-  );
+  //
   const linkName = readMore ? 'ReadLess <<' : 'Read More >>';
 
   return (
     <StyledRecentPosts>
       {posts.map((post) => {
+        const fullBlogText = `${post.blogText}`;
+        const FirstPartText = fullBlogText.slice(0, 300);
+        const RestOfText = fullBlogText.slice(301, 150000000000);
+
         return (
           <>
-            {' '}
             <Card
               style={{
                 marginBottom: '20px 0',
@@ -48,8 +45,11 @@ const RecentPosts = (props) => {
               <Title>{post.blogTitle}</Title>
               <PostedBy>{post.postedOn}</PostedBy>
               <BlogCategory>{post.BlogCategory}</BlogCategory>
-              <Text>{post.blogText}.</Text>
-              {readMore && extraContent}
+              <Text>
+                {FirstPartText}
+                {readMore && RestOfText}
+              </Text>
+
               <Button
                 onClick={() => {
                   setReadMore(!readMore);

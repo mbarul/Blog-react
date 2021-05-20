@@ -3,6 +3,7 @@ import { StyledContact } from './Contact.styles';
 import { Title } from '../../components/atoms/Title/Title';
 import Card from '../../components/molecules/Card/Card';
 import { Text } from '../../components/atoms/Text/Text';
+
 /**
  * @author
  * @function Contact
