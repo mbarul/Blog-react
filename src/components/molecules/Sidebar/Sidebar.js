@@ -3,7 +3,6 @@ import { StyledSidebar } from './Sidebar.styles';
 import Card from '../Card/Card';
 import blogPost from '../../../data/blog.json';
 import { NavLink } from 'react-router-dom';
-import SocialMedia from '../../atoms/SocialMedia/SocialMedia';
 /**
  * @author
  * @function Sidebar
