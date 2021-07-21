@@ -8,7 +8,7 @@ import { StyledLogo } from './Logo.styles';
 const Logo = (props) => {
   return (
     <StyledLogo>
-      <a href="#">Marek</a>
+      <a href="http://localhost:3000/">BLOG</a>
     </StyledLogo>
   );
 };

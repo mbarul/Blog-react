@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { StyledNavbar } from './Navbar.styles';
+import SearchButton from '../../atoms/SearchButton/SearchButton';
 /**
  * @author
  * @function Navbar
@@ -28,7 +29,7 @@ const Navbar = (props) => {
           <NavLink to="/aboutUs">About us</NavLink>
         </li>
         <li>
-          <NavLink to="/post">Posts</NavLink>
+          <NavLink to="/post/1">Posts</NavLink>
         </li>
         <li>
           <NavLink to="/contact">Contant us</NavLink>

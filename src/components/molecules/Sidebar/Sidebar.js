@@ -26,9 +26,7 @@ const Sidebar = (props) => {
           <img src="/images/1.jpg" alt="" />
         </div>
         <div className="cardBody">
-          <p className="personalBio">
-            Mam na imię Marek Barul i uczę się REACT chcę zostać FRONT-END!
-          </p>
+          <p className="personalBio">...</p>
         </div>
       </Card>
 
